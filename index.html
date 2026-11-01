@@ -21,10 +21,11 @@ html{scroll-padding-top:env(safe-area-inset-top,0px)}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 1.125rem/1.65 'Newsreader',Georgia,serif}
 .wrap{max-width:880px;margin:0 auto;padding:0 1.5rem}
 h1,h2,h3,.btn,.brand{font-family:'Archivo',system-ui,sans-serif}
-header{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0}
-.brand{font-weight:800;font-size:1.35rem;letter-spacing:.01em}
-.brand{display:flex;align-items:center;gap:.75rem}.logo{width:72px;height:72px;flex:none;object-fit:contain}
-.brand small{display:block;font-weight:500;font-size:0.9rem;color:var(--muted);letter-spacing:0.02em}
+header{display:flex;justify-content:space-between;align-items:center;padding:1.75rem 0}
+.brand{font-weight:800;font-size: clamp(2rem, 5vw, 2.75rem);letter-spacing:.01em;line-height:1.1}
+.brand{display:flex;align-items:center;gap:1.25rem}
+.logo{width: clamp(120px, 18vw, 160px);height: clamp(120px, 18vw, 160px);flex:none;object-fit:contain}
+.brand small{display:block;font-weight:500;font-size: clamp(1.2rem, 2.5vw, 1.5rem);color:var(--muted);letter-spacing:0.02em;margin-top:0.2rem}
 .btn{display:inline-block;background:var(--btn-bg);color:var(--btn-ink);text-decoration:none;font-weight:800;font-size:1rem;padding:.85rem 1.4rem;border-radius:999px}
 .btn:focus-visible,a:focus-visible{outline:3px solid var(--turf);outline-offset:3px}
 .hero{padding:3rem 0 4rem}
@@ -121,4 +122,3 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.95rem;border-top:1px so
 </script>
 </body>
 </html>
-```[cite: 1, 2]
