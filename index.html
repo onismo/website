@@ -45,6 +45,9 @@ h2{font-weight:800;font-size:clamp(1.8rem,5vw,2.5rem);letter-spacing:-.02em;marg
 .about{display:grid;gap:2rem}
 @media(min-width:760px){.about{grid-template-columns:1.6fr 1fr}}
 .about p{margin:0 0 1rem}
+.marvin-grid{display:grid;gap:2rem;align-items:start}
+@media(min-width:680px){.marvin-grid{grid-template-columns:220px 1fr}}
+.marvin-photo{width:100%;max-width:260px;height:auto;border-radius:12px;object-fit:cover;aspect-ratio:4/5;display:block}
 .creds{background:var(--panel);padding:1.5rem;border-radius:14px;align-self:start}
 .creds h3{margin:0 0 .75rem;font-size:1rem}
 .creds ul{margin:0;padding-left:1.1rem;color:var(--muted)}
@@ -86,11 +89,26 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.95rem;border-top:1px so
       </ul>
     </section>
 
+    <section id="meet-marvin">
+      <h2>Meet Marvin</h2>
+      <div class="marvin-grid">
+        <img src="photo.jpg" alt="Marvin Ventura, Physical Therapist" class="marvin-photo">
+        <div>
+          <h3>Marvin Ventura</h3>
+          <p>Marvin is a highly experienced and dedicated physical therapist, practicing since 1997, with nearly three decades of expertise in rehabilitation and sports performance. He earned his Master’s degree in Sports Physiotherapy from the University of Queensland, Australia, where he developed a strong foundation in evidence-based treatment and athletic recovery from Dr. Bill Vicenzino, Dr. Gwen Jull and Dr. Paul Hodges.</p>
+          <p>He served as the pioneering Head Physical Therapist for the Moro Lorenzo Sports Center at Ateneo de Manila University in the Philippines, where he played a key role in advancing sports medicine programs and supporting elite athletes across multiple disciplines.</p>
+          <p>His international experience also includes working at the renowned Rehabilitation Institute of Chicago (now known as Shirley Ryan Ability Lab), widely recognized as one of the top rehabilitation hospitals in the United States, where he refined his clinical skills in complex rehabilitation and patient-centered care.</p>
+          <p>Marvin specializes in multimodal physical therapy techniques for sports and orthopedic injuries, integrating globally informed approaches from advanced training and clinical exposure in Prague, the United States, Australia, and New Zealand. This diverse background allows him to deliver comprehensive, individualized treatment plans tailored to each patient’s recovery and performance goals.</p>
+          <p>As a Titleist Performance Institute (TPI) Certified Medical 3 professional, Marvin focuses on movement assessment and performance optimization, particularly for golf athletes. His approach combines advanced clinical expertise with innovative rehabilitation strategies to help patients recover efficiently and perform at their highest level.</p>
+        </div>
+      </div>
+    </section>
+
     <section id="about">
       <h2>Background</h2>
       <div class="about">
         <div>
-          <p>Swinglab Rehab is led by a physical therapist with more than 20 years of clinical experience. He combines hands-on rehabilitation with the golf-specific testing developed by the Titleist Performance Institute (TPI).</p>
+          <p>Swinglab Rehab combines hands-on rehabilitation with golf-specific testing developed by the Titleist Performance Institute (TPI).</p>
           <p>Whether you are recovering from an injury or want to play without pain, every plan starts with how you move and what your swing asks of your body.</p>
         </div>
         <div class="creds">
